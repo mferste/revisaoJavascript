@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <input type="text" id="valor01" /> <br />
+    <input type="text" id="valor02" /> <br />
+    <button type="button" id="botao" onclick="soma()">Realizar Soma</button>
+    <br />
+    <p id="resposta">Resposta:</p>
+  </body>
+</html>
+
+<script>
+  function soma() {
+    var1 = parseInt(document.getElementById("valor01").value);
+    var2 = parseInt(document.getElementById("valor02").value);
+    document.getElementById("resposta").innerHTML = "Resposta " + (var1 + var2);
+  }
+</script>
